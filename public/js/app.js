@@ -1,6 +1,7 @@
 const form = document.querySelector('form');
 const error = document.querySelector('#error');
 const message = document.querySelector('#data');
+const img = document.querySelector('.img');
 
 
 form.addEventListener('submit', (e) => {
