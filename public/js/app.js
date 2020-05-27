@@ -15,9 +15,8 @@ form.addEventListener('submit', (e) => {
             if (data.error) {
                 return error.innerHTML = data.error
             }
-            error.textContent = data.forcast;
             message.textContent = data.location
-
+            error.textContent = data.forcast;
 
         })
     })
