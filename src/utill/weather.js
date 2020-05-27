@@ -8,7 +8,7 @@ const weather = (lat, long, callback) => {
             callback('unable to connect to weather app', undefined)
         }
         else {
-            callback(undefined, `${body.wx_desc} with ${body.temp_c} degree ${body.temp_f}fahrenheit today and has a wind speed of ${body.windspd_kmh}km/hr `
+            callback(undefined, `${body.wx_icon}${body.wx_desc} with ${body.temp_c} degree, ${body.temp_f}fahrenheit today and has a wind speed of ${body.windspd_kmh}km/hr `
             )
         }
 
